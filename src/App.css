@@ -365,7 +365,7 @@ section h2::after {
 .tech-icon {
   width: 16px;
   height: 16px;
-  fill: var(--primary-color);
+  margin-right: 2px;
 }
 
 .dark-mode .tech-tag {
@@ -431,6 +431,9 @@ section h2::after {
   font-weight: 500;
   transition: var(--transition), background-color 0.3s ease;
   color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .skill-tag:hover {
@@ -438,6 +441,16 @@ section h2::after {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   background-color: var(--primary-color);
   color: white;
+}
+
+.skill-tag .tech-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+}
+
+.dark-mode .skill-tag:hover .tech-icon {
+  fill: white;
 }
 
 /* Education section */
@@ -461,6 +474,16 @@ section h2::after {
   color: var(--primary-color);
   font-weight: 500;
   margin-bottom: 0.5rem;
+}
+
+.education-card .institution a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.education-card .institution a:hover {
+  text-decoration: underline;
 }
 
 .courses-grid {
