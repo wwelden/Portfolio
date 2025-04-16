@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './App.css'
 import projectImage from './assets/project-placeholder.svg'
 import headerBg from './assets/header-bg.svg'
@@ -196,6 +196,157 @@ const getTechIcon = (tech) => {
 function App() {
   const [activeSection, setActiveSection] = useState('home')
   const [darkMode, setDarkMode] = useState(false)
+  const cursorGlowRef = useRef(null)
+  const textCursorRef = useRef(null)
+
+  // Handle cursor glow effect
+  useEffect(() => {
+    // Check if device has hover capability (not a touch device)
+    const hasHover = window.matchMedia('(hover: hover)').matches
+    if (!hasHover) return // Don't apply cursor effects on touch devices
+
+    // Create cursor glow element
+    const cursorGlow = document.createElement('div')
+    cursorGlow.classList.add('cursor-glow')
+    document.body.appendChild(cursorGlow)
+    cursorGlowRef.current = cursorGlow
+
+    // Create text cursor element
+    const textCursor = document.createElement('div')
+    textCursor.classList.add('text-cursor')
+    document.body.appendChild(textCursor)
+    textCursorRef.current = textCursor
+
+    const handleMouseMove = (e) => {
+      // Update cursor glow position with slight delay for smooth effect
+      requestAnimationFrame(() => {
+        cursorGlow.style.left = `${e.clientX}px`
+        cursorGlow.style.top = `${e.clientY}px`
+
+        // Update text cursor position immediately for precision
+        textCursor.style.left = `${e.clientX}px`
+        textCursor.style.top = `${e.clientY}px`
+      })
+    }
+
+    const handleMouseDown = () => {
+      cursorGlow.classList.add('active')
+
+      // Make text cursor larger on click
+      textCursor.style.width = '8px'
+      textCursor.style.height = '8px'
+    }
+
+    const handleMouseUp = () => {
+      if (!isHoveringInteractive) {
+        cursorGlow.classList.remove('active')
+      }
+
+      // Reset text cursor size
+      textCursor.style.width = '6px'
+      textCursor.style.height = '6px'
+    }
+
+    // Track if currently hovering over an interactive element
+    let isHoveringInteractive = false
+
+    const handleMouseEnter = (e) => {
+      if (isInteractiveElement(e.target)) {
+        isHoveringInteractive = true
+        cursorGlow.classList.add('active')
+      }
+    }
+
+    const handleMouseLeave = (e) => {
+      if (isInteractiveElement(e.target)) {
+        isHoveringInteractive = false
+        cursorGlow.classList.remove('active')
+        // Reset cursor type when leaving interactive elements
+        document.body.removeAttribute('data-cursor')
+      }
+    }
+
+    // Helper function to check if element is interactive
+    const isInteractiveElement = (element) => {
+      const interactiveTags = ['A', 'BUTTON', 'INPUT', 'TEXTAREA', 'SELECT']
+
+      // Handle text input elements
+      if(['INPUT', 'TEXTAREA'].includes(element.tagName)) {
+        document.body.setAttribute('data-cursor', 'text')
+        return true
+      }
+
+      // Handle buttons and links
+      if(element.tagName === 'A' ||
+         element.tagName === 'BUTTON' ||
+         element.closest('a') ||
+         element.closest('button') ||
+         element.getAttribute('role') === 'button' ||
+         element.classList.contains('project-card') ||
+         element.classList.contains('skill-tag') ||
+         element.classList.contains('social-link')) {
+        document.body.setAttribute('data-cursor', 'button')
+        return true
+      }
+
+      // Handle media elements
+      if(element.tagName === 'IMG' ||
+         element.tagName === 'VIDEO' ||
+         element.tagName === 'svg' ||
+         element.classList.contains('project-image') ||
+         element.closest('.project-image')) {
+        document.body.setAttribute('data-cursor', 'media')
+        return true
+      }
+
+      // Reset cursor type to default
+      document.body.removeAttribute('data-cursor')
+
+      return interactiveTags.includes(element.tagName) ||
+             element.closest('a') ||
+             element.closest('button') ||
+             element.getAttribute('role') === 'button'
+    }
+
+    // Add event listeners
+    document.addEventListener('mousemove', handleMouseMove)
+    document.addEventListener('mousedown', handleMouseDown)
+    document.addEventListener('mouseup', handleMouseUp)
+
+    // Use event delegation for interactive elements
+    document.addEventListener('mouseover', handleMouseEnter)
+    document.addEventListener('mouseout', handleMouseLeave)
+
+    // Hide cursor when leaving the window
+    document.addEventListener('mouseleave', () => {
+      cursorGlow.style.opacity = '0'
+      textCursor.style.opacity = '0'
+    })
+
+    document.addEventListener('mouseenter', () => {
+      cursorGlow.style.opacity = '0.7'
+      textCursor.style.opacity = '1'
+    })
+
+    // Clean up on component unmount
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove)
+      document.removeEventListener('mousedown', handleMouseDown)
+      document.removeEventListener('mouseup', handleMouseUp)
+      document.removeEventListener('mouseover', handleMouseEnter)
+      document.removeEventListener('mouseout', handleMouseLeave)
+      document.removeEventListener('mouseleave', () => {})
+      document.removeEventListener('mouseenter', () => {})
+
+      if (cursorGlowRef.current) {
+        document.body.removeChild(cursorGlowRef.current)
+      }
+
+      if (textCursorRef.current) {
+        document.body.removeChild(textCursorRef.current)
+      }
+    }
+  }, [])
 
   // Handle section changes with smooth scrolling
   const changeSection = (section) => {
