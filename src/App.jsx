@@ -798,7 +798,7 @@ function Contact() {
           data-aos-once="true"
         >
           <h3>Email</h3>
-          <p><a href="mailto:wwelden@trinity.edu">wwelden@trinity.edu</a></p>
+          {/* <p><a href="mailto:wwelden@trinity.edu">wwelden@trinity.edu</a></p> */}
         </div>
         <div
           className="contact-item"
@@ -808,7 +808,7 @@ function Contact() {
           data-aos-once="true"
         >
           <h3>Phone</h3>
-          <p>(404) 432-3353</p>
+          {/* <p>(404) 432-3353</p> */}
         </div>
         <div
           className="contact-item"
