@@ -467,7 +467,7 @@ function Home({ changeSection, darkMode }) {
             >
               View My Projects
             </button>
-            <a href="mailto:wwelden@trinity.edu" className="cta-button secondary">Contact Me</a>
+            <a href="mailto:weldentrack@gmail.com" className="cta-button secondary">Contact Me</a>
           </div>
         </div>
       </div>
@@ -798,7 +798,7 @@ function Contact() {
           data-aos-once="true"
         >
           <h3>Email</h3>
-          {/* <p><a href="mailto:wwelden@trinity.edu">wwelden@trinity.edu</a></p> */}
+          <p><a href="mailto:weldentrack@gmail.com">weldentrack@gmail.com</a></p>
         </div>
         <div
           className="contact-item"
