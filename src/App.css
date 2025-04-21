@@ -670,6 +670,19 @@ section h2::after {
   z-index: 2;
 }
 
+.course-link {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 3;
+}
+
+.course-link:hover {
+  color: var(--primary-color);
+}
+
 .course-item::before {
   content: '';
   position: absolute;

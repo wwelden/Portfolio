@@ -6,24 +6,78 @@
     "graduation": "May, 2026"
   },
   "courses": [
-    "Discrete Structures",
-    "Principles of Computer Science",
-    "Principles of Computer Science 2",
-    "Principles of Data Abstraction",
-    "Principles of Functional Languages",
-    "Engineering Analysis & Design",
-    "Principles of Computer Design",
-    "Principles of Theoretical Computer Science",
-    "Compiler Construction",
-    "Principles of Programming Languages",
-    "Principles of Algorithms",
-    "Calculus I",
-    "Web Application Design",
-    "Principles of Software Engineering",
-    "Intro to Game Development",
-    "Senior Software Project I",
-    "Principles of Operating Systems",
-    "Computer and Network Security"
+    {
+      "name": "Discrete Structures",
+      "link": "https://www.trinity.edu/academics/cosb/csci/discrete-structures"
+    },
+    {
+      "name": "Principles of Computer Science",
+      "link": "https://www.trinity.edu/academics/cosb/csci/principles-computer-science-i"
+    },
+    {
+      "name": "Principles of Computer Science 2",
+      "link": "https://www.trinity.edu/academics/cosb/csci/principles-computer-science-ii"
+    },
+    {
+      "name": "Principles of Data Abstraction",
+      "link": "https://www.trinity.edu/academics/cosb/csci/principles-data-abstraction"
+    },
+    {
+      "name": "Principles of Functional Languages",
+      "link": "https://www.trinity.edu/academics/cosb/csci/principles-functional-languages"
+    },
+    {
+      "name": "Engineering Analysis & Design",
+      "link": "https://www.trinity.edu/academics/cosb/engr/engineering-analysis-design-i"
+    },
+    {
+      "name": "Principles of Computer Design",
+      "link": "https://www.trinity.edu/academics/cosb/csci/principles-computer-design"
+    },
+    {
+      "name": "Principles of Theoretical Computer Science",
+      "link": "https://www.trinity.edu/academics/cosb/csci/principles-theoretical-computer-science"
+    },
+    {
+      "name": "Compiler Construction",
+      "link": "https://www.trinity.edu/academics/cosb/csci/compiler-construction"
+    },
+    {
+      "name": "Principles of Programming Languages",
+      "link": "https://sites.google.com/trinity.edu/csci3368-sp24/"
+    },
+    {
+      "name": "Principles of Algorithms",
+      "link": "https://www.trinity.edu/academics/cosb/csci/principles-algorithms"
+    },
+    {
+      "name": "Calculus I",
+      "link": "https://www.trinity.edu/academics/cosb/math/calculus-i"
+    },
+    {
+      "name": "Web Application Design",
+      "link": "https://www.trinity.edu/academics/cosb/csci/web-application-design-0"
+    },
+    {
+      "name": "Principles of Software Engineering",
+      "link": "https://www.trinity.edu/academics/cosb/csci/principles-software-engineering"
+    },
+    {
+      "name": "Intro to Game Development",
+      "link": "https://www.trinity.edu/academics/cosb/csci/introduction-game-development"
+    },
+    {
+      "name": "Senior Software Project I",
+      "link": "https://www.trinity.edu/academics/cosb/csci/senior-software-project-i"
+    },
+    {
+      "name": "Principles of Operating Systems",
+      "link": "https://www.trinity.edu/academics/cosb/csci/principles-operating-systems"
+    },
+    {
+      "name": "Computer and Network Security",
+      "link": "https://www.trinity.edu/academics/cosb/csci/computer-network-security"
+    }
   ],
   "certifications": [
     "Expert Excel Certified"

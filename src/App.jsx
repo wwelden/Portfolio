@@ -616,7 +616,14 @@ function Education() {
             data-aos-duration="800"
             data-aos-once="true"
           >
-            {course}
+            <a
+              href={course.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="course-link"
+            >
+              {course.name}
+            </a>
           </div>
         ))}
       </div>
