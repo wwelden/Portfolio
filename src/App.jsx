@@ -672,16 +672,6 @@ function Contact() {
         <div
           className="contact-item"
           data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="800"
-          data-aos-once="true"
-        >
-          <h3>Phone</h3>
-          {/* <p>(404) 432-3353</p> */}
-        </div>
-        <div
-          className="contact-item"
-          data-aos="fade-up"
           data-aos-delay="200"
           data-aos-duration="800"
           data-aos-once="true"
