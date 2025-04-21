@@ -1,0 +1,31 @@
+{
+  "degree": {
+    "title": "Bachelor of Science in Computer Science",
+    "institution": "Trinity University",
+    "institutionLink": "https://www.trinity.edu/",
+    "graduation": "May, 2026"
+  },
+  "courses": [
+    "Discrete Structures",
+    "Principles of Computer Science",
+    "Principles of Computer Science 2",
+    "Principles of Data Abstraction",
+    "Principles of Functional Languages",
+    "Engineering Analysis & Design",
+    "Principles of Computer Design",
+    "Principles of Theoretical Computer Science",
+    "Compiler Construction",
+    "Principles of Programming Languages",
+    "Principles of Algorithms",
+    "Calculus I",
+    "Web Application Design",
+    "Principles of Software Engineering",
+    "Intro to Game Development",
+    "Senior Software Project I",
+    "Principles of Operating Systems",
+    "Computer and Network Security"
+  ],
+  "certifications": [
+    "Expert Excel Certified"
+  ]
+}

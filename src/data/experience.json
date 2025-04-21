@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Open Source Contributor",
+    "company": "Blue Button Project",
+    "companyLink": "https://github.com/amida-tech/blue-button",
+    "duration": "One Semester",
+    "description": "Contributed to the <a href=\"https://github.com/TU-SSP-blue-button/blue-button\" target=\"_blank\" rel=\"noopener noreferrer\">Blue Button</a> open source XML/JSON conversion library:",
+    "responsibilities": [
+      "Updated dependencies to modernize the codebase",
+      "Fixed bugs to improve functionality",
+      "Implemented GitHub Actions for automated CI/CD",
+      "Collaborated with team members on project goals"
+    ]
+  }
+]

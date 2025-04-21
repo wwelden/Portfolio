@@ -1,0 +1,31 @@
+{
+  "email": {
+    "title": "Email",
+    "value": "weldentrack@gmail.com",
+    "link": "mailto:weldentrack@gmail.com"
+  },
+  "phone": {
+    "title": "Phone",
+    "value": ""
+  },
+  "location": {
+    "title": "Location",
+    "value": "San Antonio, TX"
+  },
+  "resume": {
+    "path": "/resume.html",
+    "filename": "William_Welden_Resume.html"
+  },
+  "social": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/wwelden",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/william-welden-256294292/",
+      "icon": "linkedin"
+    }
+  ]
+}

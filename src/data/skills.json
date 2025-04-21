@@ -1,0 +1,33 @@
+[
+  {
+    "category": "Proficient Languages",
+    "skills": [
+      {"name": "Go", "icon": "go"},
+      {"name": "C#", "icon": "c#"},
+      {"name": "Haskell", "icon": "haskell"},
+      {"name": "JavaScript", "icon": "javascript"},
+      {"name": "Java", "icon": "java"},
+      {"name": "Scala", "icon": "scala"}
+    ]
+  },
+  {
+    "category": "Somewhat Proficient Languages",
+    "skills": [
+      {"name": "Rust", "icon": "rust"},
+      {"name": "C++", "icon": "c++"},
+      {"name": "Python", "icon": "python"},
+      {"name": "TypeScript", "icon": "typescript"},
+      {"name": "Lua", "icon": "lua"}
+    ]
+  },
+  {
+    "category": "Technologies",
+    "skills": [
+      {"name": "Unity", "icon": "unity"},
+      {"name": "GitHub", "icon": "github"},
+      {"name": "GitHub Actions", "icon": "github actions"},
+      {"name": "Bash scripts", "icon": "bash"},
+      {"name": "Google Cloud", "icon": "google cloud"}
+    ]
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "title": "British Programming Language",
+    "description": "An esoteric programming language developed in Haskell featuring British-inspired keywords, complete with lexer, parser, and evaluator components.",
+    "techStack": ["Haskell", "Happy", "Alex"],
+    "github": "https://github.com/wwelden/British",
+    "skills": ["Functional programming", "Lambda calculus", "Type Systems", "Language design", "Grammar Specification"]
+  },
+  {
+    "title": "Chefs Vs. Aliens",
+    "description": "A parody tower defense game developed with Unity in C# based on Plants Vs. Zombies with a twist.",
+    "techStack": ["C#", "Unity", "Pixelmator pro"],
+    "github": "https://github.com/JorgeFLarach/CVA",
+    "skills": ["Team work", "Git", "Object oriented programming", "Resolving merge conflicts", "Git ignore files", "Using game engines"]
+  },
+  {
+    "title": "Blue Dog Shopping",
+    "description": "A simulation of a pet store website with a vendor page to add, remove, and adjust product information accessible through login only.",
+    "techStack": ["JavaScript", "mySQL", "EJS"],
+    "github": "https://github.com/jbrigham01/PetSmartest",
+    "skills": ["Web servers", "Frontend Web Dev", "Managing a git hub project"]
+  },
+  {
+    "title": "Keystroke",
+    "description": "A markdown parser that converts markdown to HTML.",
+    "techStack": ["TypeScript"],
+    "github": "https://github.com/wwelden/Keystroke",
+    "skills": ["Interpreter design"]
+  },
+  {
+    "title": "DarkWeb Scraper",
+    "description": "A web scraper for securely searching leaked data on the dark web, developed for a Computer and Network Security course.",
+    "techStack": ["Python", "Tor", "VPN", "Kahli Linux VM", "Bash scripts"],
+    "github": "https://github.com/wwelden/Dark-Web-Crawler",
+    "skills": ["Bash scripts", "Team work", "Web scraping", "Cyber Security"]
+  },
+  {
+    "title": "Programming Language Benchmark",
+    "description": "Comparative study of 21 different programming languages by implementing the same program and timing execution.",
+    "techStack": ["Multiple languages", "Bash scripts"],
+    "github": "https://github.com/wwelden/Loop-Speed-Benchmark",
+    "skills": ["Bash scripts", "Executable files", "Setting up multiple languages and compilers"]
+  },
+  {
+    "title": "TIPC Compiler",
+    "description": "A compiler project that transforms low-level ILOC instructions into optimized assembly code with register allocation and dependency-based scheduling.",
+    "techStack": ["C++"],
+    "github": "https://github.com/wwelden/Compilers",
+    "skills": ["Compiler design", "Code optimization", "Assembly"]
+  },
+  {
+    "title": "Space Game",
+    "description": "A Galaga clone with additional features built without a game engine.",
+    "techStack": ["Scala", "Metals"],
+    "github": "https://github.com/wwelden/SpaceGame",
+    "skills": ["Game development without a game engine", "Data structures", "Game architecture"]
+  },
+  {
+    "title": "Go Interpreter",
+    "description": "An interpreter written in Go supporting a Cpp-like language called Monkey, following Thorsten Ball's book.",
+    "techStack": ["Go"],
+    "github": "https://github.com/wwelden/Go-Interpreter",
+    "skills": ["Reinforcing compiler design concepts", "Interpreter design", "Language parsing"]
+  },
+  {
+    "title": "Black Jack",
+    "description": "A black jack game with card animations and card type selector.",
+    "techStack": ["C#", "Unity"],
+    "github": "https://github.com/GameDevelopment-F24/Welden-Blackjack",
+    "skills": ["Sprite animations", "Game development"]
+  },
+  {
+    "title": "Asteroids",
+    "description": "A clone of the classic arcade game Asteroids.",
+    "techStack": ["C#", "Unity"],
+    "github": "https://github.com/GameDevelopment-F24/Welden-Asteroids",
+    "skills": ["Game physics", "Collision detection", "Game development"]
+  },
+  {
+    "title": "Sokoban",
+    "description": "A clone of the classic arcade game Sokoban featuring puzzle mechanics.",
+    "techStack": ["C#", "Unity"],
+    "github": "https://github.com/GameDevelopment-F24/Welden-Sokoban",
+    "skills": ["Tilemaps", "Game development", "Puzzle design"]
+  },
+  {
+    "title": "Connect 4",
+    "description": "A terminal-based Connect 4 game with AI opponent developed in Haskell.",
+    "techStack": ["Haskell"],
+    "github": "https://github.com",
+    "skills": ["Github", "Git", "Functional Programming", "Game AI"]
+  }
+]
