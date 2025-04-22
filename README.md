@@ -65,9 +65,6 @@ The site is configured for GitHub Pages deployment using the gh-pages package:
 npm run deploy
 ```
 
-## License
-MIT
-
 ## Contact
 - Email: wwelden@trinity.edu
 - GitHub: [github.com/wwelden](https://github.com/wwelden)
